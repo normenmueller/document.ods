@@ -1,0 +1,98 @@
+# Overview
+
+OpenDevStack allows to set up required infrastructure and continuous delivery
+processes for new projects in less than 5 min.
+
+OpenDevStack creates the required
+
+- Confluence spaces,
+- Jira projects,
+- Bitbucket projects and repositories and
+- OpenShift resources.
+
+And all is tightly integrated. Simply provision a new project, commit and then
+run your code.
+
+## Confluence
+
+Confluence is Atlassians' **content collaboration tool** used to help teams to
+collaborate and share knowledge efficiently. With Confluence, your users can
+create pages and blogs which can be commented on and edited by all members of
+the team.
+
+## Jira
+
+Jira is Atlassians' **project- and issue-tracking platform**.
+
+It combines issue tracking, agile project management, customizable workflow,
+pluggable integration (e.g., GitHub, Asana and so on), and the kanban board to
+increase the velocity.
+
+## BitBucket
+
+Bitbucket is Atlassians' **Git repository management** solution designed for
+professional teams. It gives you a central place to manage git repositories,
+collaborate on your source code and guide you through the development flow. It
+provides awesome features that include:
+
+- Acces control to restrict access to your source code.
+- Workflow control to enforce a project or team workflow.
+- Pull requests with in-line commenting for collaboration on code review.
+- Jira integration for full development traceability.
+- Full Rest API to build features custom to your workflow if they are not
+  already available from our Marketplace
+
+## Red Hat OpenShift
+
+Red Hat OpenShift is the leading Kubernetes platform for delivering the
+extraordinary to your users, faster than you can imagine.
+
+# Getting started
+
+## Requirements
+
+- Git
+- Vagrant
+- VirtualBox
+- Crowd
+- Minishift
+- Ansible
+- Tailor
+
+## Vagrant
+
+Vagrant enables users to create and configure lightweight, reproducible, and
+portable **development environments**. It leverages a *declarative configuration
+file* which describes all your software requirements, packages, operating system
+configuration, users, and more.
+
+Cf. [Vagrant vs. Docker](https://www.vagrantup.com/intro/vs/docker.html):
+Vagrant is a tool focused on providing a consistent development environment
+workflow across multiple operating systems. Docker is a container management
+that can consistently run software as long as a containerization system exists.
+
+The OpenDevStack uses Vagrant to *provide a sample infrastructure* for the
+Atlassian tools, Rundeck and a so called Ansible controller, a VM, where you
+can run Ansible scripts against the Atlassian VM.
+
+## Crowd
+
+[Atlassian's
+Crowd](https://confluence.atlassian.com/crowd/introduction-to-crowd-152043763.html)
+is a software application installed by the system administrator. The
+administrator will also connect one or more of your organization's applications
+to Crowd. When you log in to a Crowd-connected application, Crowd will verify
+your password and login permissions.
+
+Using Crowd for *single sign-on (SSO)*, each person needs only one username and
+password to access all web applications. You can host your own OpenID provider
+to include external applications.
+
+## Minishift
+
+[Minishift](https://docs.okd.io/latest/minishift/getting-started/index.html) is
+a tool provided by Red Hat to *run OpenShift locally* by providing a
+single-node OpenShift cluster inside a VM.
+
+[modeline]: # ( vim: set ft=markdown fenc=utf-8 spell spl=en_us,de: )
+
